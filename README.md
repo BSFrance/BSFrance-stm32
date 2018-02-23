@@ -16,7 +16,7 @@ Launch Arduino IDE, select BSFrance LoRaMx boards in the Tool / board menu, sele
 
 ### Virtual serial port
 
-The LoRaMx boards are providing a serial port via the native USB interface, this serial port can be used for debug or communication purpose, it is also used by the core during upload (for resetting the baord into DFU mode automatically).
+The LoRaMx boards are providing a serial port via the native USB interface, this serial port can be used for debug or communication purpose, it is also used by Arduino to provide automatic upload.
 
 ### DFU
 
