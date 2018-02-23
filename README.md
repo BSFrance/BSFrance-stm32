@@ -10,7 +10,7 @@ At first drivers for the usb-serial (VCP, Virtual Com Port) and DFU (Device Firm
   - Launch [Zadig installer](https://github.com/BSFrance/BSFrance-stm32/raw/master/stm32/tools/win/drivers/zadig-2.3.exe), the board will be recognized as STM32 BOOTLOADER, install the driver.
   - Press the reset button once so the board restart in normal mode (run) and install the [STM32 Virtual COM Port driver](https://github.com/BSFrance/BSFrance-stm32/raw/master/stm32/tools/win/drivers/Virtual%20Com%20port%20driver%20V1.4.0.msi).
 
-You can now proceed with the Arduino core installation, to do so
+You can now proceed with the Arduino core installation :
   - download the [core repository](https://github.com/BSFrance/BSFrance-stm32/archive/master.zip) and unzip it to Documents / Arduino / hardware folder (you might also want to rename it BSFrance-stm32).
 
 Note : Documents / Arduino is the default location used by Arduino IDE, if you use another location the principle is the same. If there is no Hardware folder in Documents / Arduino create it and move the BSFrance-stm32 repository inside.
@@ -36,3 +36,7 @@ This mecanism is very important for any board with native USB serial because if 
 So in such case the DFU mode has to be set manually by pressing the reset button twice within 0.5 second, uploading can then be done in Arduino IDE with the upload button as usual.
 
 Note : when set to manual DFU mode the serial port wont be visible in Tools / port menu anymore, this is normal behavior and wont prevent uploading. The serial port cannot coexist with the DFU port due to OS limitations, during the uplaod process, the existing serial port is used by Arduino to reset the board into DFU mode, both mode are never active at the same time. When the board is set to manual DFU mode Arduino will detect it is already in DFU mode and will upload directly.
+
+### SWD (STlink)
+
+You can also use an STLink debugger for uploading, make sure to select STLink in the Tools / upload method menu. Connect your STLink to the SWD interface (3V3 GND DIO CLK), there is no need to connect the RST line, reset is issued in software.
