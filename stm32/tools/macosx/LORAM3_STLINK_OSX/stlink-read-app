@@ -1,3 +1,0 @@
-#!/bin/bash
-#$(dirname $0)/stlink/st-flash write "$4" 0x8000000
-st-flash read LoRaM3_L151_APP.bin 0x8002000 0x7800
