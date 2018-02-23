@@ -13,8 +13,8 @@ compiler.warning_flags.more=-Wall
 compiler.warning_flags.all=-Wall -Wextra
 
 #compiler.path={runtime.tools.arm-none-eabi-gcc.path}/bin/
-#compiler.path={runtime.hardware.path}/gcc-arm-none-eabi-6-2017-q2-update/bin/
-compiler.path=C:\Users\owayl\Documents\Arduino\hardware\bsfrance\stm32\tools\win\gcc/bin/
+compiler.path.windows={runtime.hardware.path}/stm32/tools/win/gcc/bin/
+compiler.path.macosx={runtime.hardware.path}/stm32/tools/macosx/gcc/bin/
 
 
 compiler.S.cmd=arm-none-eabi-gcc
