@@ -1,0 +1,8 @@
+ols.profile-gd32f103r.cfg 文件拷贝到 ols-0.9.7.2/plugins 中
+串口输出，115200波特率；
+
+ols-0.9.7.2 文件夹内为上位机软件，点run.bat运行，在capture菜单中;
+
+device type 选 Arduino GD32F Logic Analyzer(120M);
+Acquisition 选项卡中可选择采样速率；
+Triggers    选项卡中设定捕捉的脚位 Mask 及对应的值 Value，Trigger Enabled勾选，按指定的捕捉方式触发采样，否则检测端口电平有变化触发，无变化超时10s左右；

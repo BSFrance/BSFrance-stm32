@@ -1,0 +1,30 @@
+#include "../../uCGUI391/Core/GUI_Goto.c"
+#include "../../uCGUI391/Core/GUI_InitLUT.c"
+#include "../../uCGUI391/Core/GUI_InvertRect.c"
+#include "../../uCGUI391/Core/GUI_IsInFont.c"
+#include "../../uCGUI391/Core/GUI_Log.c"
+#include "../../uCGUI391/Core/GUI_MergeRect.c"
+#include "../../uCGUI391/Core/GUI_MOUSE_DriverPS2.c"
+#include "../../uCGUI391/Core/GUI_MoveRect.c"
+#include "../../uCGUI391/Core/GUI_OnKey.c"
+#include "../../uCGUI391/Core/GUI_Pen.c"
+#include "../../uCGUI391/Core/GUI_PID.c"
+#include "../../uCGUI391/Core/GUI_RectsIntersect.c"
+#include "../../uCGUI391/Core/GUI_SaveContext.c"
+#include "../../uCGUI391/Core/GUI_SelectLCD.c"
+#include "../../uCGUI391/Core/GUI_SIF.c"
+#include "../../uCGUI391/Core/GUI_TOUCH.c"
+
+#include "../../uCGUI391/AntiAlias/GUIAAChar.c"
+#include "../../uCGUI391/MemDev/GUIDEV_WriteEx.c"
+
+
+#pragma GCC diagnostic ignored "-Wint-conversion"
+
+#include "../../uCGUI391/Core/GUI_TOUCH_DriverAnalog.c"
+#include "../../uCGUI391/Core/GUI_TOUCH_StoreState.c"
+#include "../../uCGUI391/Core/GUI_TOUCH_StoreUnstable.c"
+#include "../../uCGUI391/Core/GUI_UC.c"
+#include "../../uCGUI391/Core/GUI_UC_DispString.c"
+#include "../../uCGUI391/Core/GUI_UC_EncodeUTF8.c"
+

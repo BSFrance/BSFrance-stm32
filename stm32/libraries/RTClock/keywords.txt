@@ -1,0 +1,34 @@
+#######################################
+# Syntax Coloring Map RTClock
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+RTClock	KEYWORD1
+
+#######################################
+# function (KEYWORD2)
+#######################################
+Init	KEYWORD2
+setDataTime	KEYWORD2
+getDataTime	KEYWORD2
+setAlarmTime	KEYWORD2
+getWeek	KEYWORD2
+createAlarm	KEYWORD2
+attachEventInterrupt	KEYWORD2
+detachEventInterrupt	KEYWORD2
+attachAlarmInterrupt	KEYWORD2
+detachAlarmInterrupt	KEYWORD2
+attachTamperInterrupt	KEYWORD2
+detachTamperInterrupt	KEYWORD2
+pCalendar	KEYWORD2
+week	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+RTC_CLOCK_SOURCE_LSE	LITERAL1
+RTC_CLOCK_SOURCE_LSI	LITERAL1
+RTC_CLOCK_SOURCE_HSE	LITERAL1
+

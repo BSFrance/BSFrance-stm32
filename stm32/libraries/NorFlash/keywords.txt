@@ -1,0 +1,44 @@
+#######################################
+# Syntax Coloring Map BSP
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+#nor
+NORFLASH	KEYWORD1
+NOR_IDTypeDef	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+#BSP nor
+STM_FSMC_NOR_Init	KEYWORD2
+BSP_NOR_ReadData	KEYWORD2  
+BSP_NOR_WriteData	KEYWORD2
+BSP_NOR_ReadID	KEYWORD2
+BSP_NOR_ReturnToReadMode	KEYWORD2
+BSP_NOR_ProgramData	KEYWORD2
+BSP_NOR_EraseBlock	KEYWORD2
+BSP_NOR_EraseChip	KEYWORD2
+
+#arduino
+Init	KEYWORD2
+readData	KEYWORD2  
+writeData	KEYWORD2
+read_ID	KEYWORD2
+returnToReadMode	KEYWORD2
+programData	KEYWORD2
+eraseBlock	KEYWORD2
+eraseChip	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+#NOR
+NOR_DEVICE_ADDR	LITERAL1
+NOR_STATUS_OK	LITERAL1
+Manufacturer_Code	LITERAL1
+Device_Code1	LITERAL1
+Device_Code2	LITERAL1
+Device_Code3	LITERAL1

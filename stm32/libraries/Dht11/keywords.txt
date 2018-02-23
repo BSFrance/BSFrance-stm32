@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DHT11	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+Init	KEYWORD2
+read	KEYWORD2
+humidity	KEYWORD2
+temperature	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DHTLIB_OK	LITERAL1
+DHTLIB_ERROR_CHECKSUM	LITERAL1
+DHTLIB_ERROR_TIMEOUT	LITERAL1
+
+

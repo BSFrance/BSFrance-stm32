@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map SPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+EEPROMClass	KEYWORD1
+EEPROM	KEYWORD1
+EERef	KEYWORD1
+EEPtr	KEYWORD2
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+update	KEYWORD2
+stm32ReadEEPROM	KEYWORD2
+stm32WriteEEPROM	KEYWORD2
+stm32GetEEPROMLength	KEYWORD2
+stm32FormatEEPROM	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

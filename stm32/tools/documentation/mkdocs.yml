@@ -1,0 +1,23 @@
+site_name: STM32GENERIC
+docs_dir: mkdocs
+pages:
+- Installation: index.md
+- Uploading: upload.md
+- Documentation:
+    - Menu options: menu_options.md
+    - Arduino API: arduino_api.md
+    - SPI: spi.md
+    - I2C: i2c.md
+    - I2S: i2s.md
+    - SDIO: sdio.md
+    - UART Serial: uart.md
+    - USB Serial: usb_cdc.md
+    - USB Mass Storage: usb_msc.md
+    - STM32 HAL: stm32_hal.md
+- Libraries: libraries.md
+- STM32 Boards:
+    - Boards list: boards.md
+    - Adding a board: add_board.md
+    - Testing a board: test.md
+- About: about.md
+

@@ -1,0 +1,49 @@
+#######################################
+# Syntax Coloring Map SPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+SDIOClass	KEYWORD1
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+sdError	KEYWORD2
+setSdErrorCode	KEYWORD2
+SDMMC_CmdSetWrtBlkEraseCount	KEYWORD2
+SDMMC_CmdSwitchFunction	KEYWORD2
+cardStatus	KEYWORD2
+begin	KEYWORD2
+end	KEYWORD2
+readBlocks	KEYWORD2
+writeBlocks	KEYWORD2
+erase	KEYWORD2
+readCID	KEYWORD2
+readCSD	KEYWORD2
+cardSize	KEYWORD2
+errorCode	KEYWORD2
+errorData	KEYWORD2
+errorLine	KEYWORD2
+useDMA	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+SDIO	LITERAL1
+SDIO_RESPONSE_SHORT	LITERAL1
+SDIO_WAIT_NO 	LITERAL1
+SDIO_CPSM_ENABLE	LITERAL1
+SDIO_RESP1	LITERAL1
+SDIO_CLOCK_EDGE_RISING	LITERAL1
+SDIO_CLOCK_BYPASS_DISABLE	LITERAL1
+SDIO_CLOCK_POWER_SAVE_DISABLE	LITERAL1
+SDIO_BUS_WIDE_1B	LITERAL1
+SDIO_HARDWARE_FLOW_CONTROL_DISABLE	LITERAL1
+SDIO_BUS_WIDE_4B	LITERAL1
+SDIO_FLAG_DCRCFAIL	LITERAL1
+
+SDIO_GetResponse	LITERAL1
+SDIO_CmdInitTypeDef	LITERAL1
+SDIO_SendCommand	LITERAL1
+SDIO_TypeDef	LITERAL1
+#######################################

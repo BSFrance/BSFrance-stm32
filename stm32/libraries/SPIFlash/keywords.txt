@@ -1,0 +1,46 @@
+#######################################
+# Syntax Coloring Map BSP
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SPIFLASH	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+#SPIFLASH
+Init	KEYWORD2  
+readID	KEYWORD2
+capacity	KEYWORD2
+readSR	KEYWORD2
+writeSR	KEYWORD2
+writeEnable	KEYWORD2
+writeDisable	KEYWORD2
+writeNoCheck	KEYWORD2
+read	KEYWORD2
+write	KEYWORD2
+eraseChip	KEYWORD2
+eraseSector	KEYWORD2
+waitBusy	KEYWORD2
+powerDown	KEYWORD2
+WAKEUP	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+NOR_DEVICE_ADDR	LITERAL1
+NOR_STATUS_OK	LITERAL1
+W25Q40	LITERAL1
+W25Q80	LITERAL1	
+W25Q16	LITERAL1
+W25Q32	LITERAL1
+W25Q64	LITERAL1
+W25Q128	LITERAL1
+M25P128	LITERAL1
+M25P64	LITERAL1
+SST25VF032	LITERAL1
+AT45DB161	LITERAL1

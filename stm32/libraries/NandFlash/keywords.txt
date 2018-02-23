@@ -1,0 +1,49 @@
+#######################################
+# Syntax Coloring Map BSP
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+#nand
+NANDFLASH	KEYWORD1
+NAND_AddressTypeDef	KEYWORD1
+NAND_IDTypeDef	KEYWORD1
+LCD_StatusTypeDef	KEYWORD1
+LCD_DrvTypeDef	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+##bsp nand
+BSP_NAND_Init	KEYWORD2
+BSP_NAND_ReadData	KEYWORD2
+BSP_NAND_WriteData	KEYWORD2
+BSP_NAND_EraseBlock	KEYWORD2
+BSP_NAND_EraseChip	KEYWORD2
+BSP_NAND_ReadID	KEYWORD2
+
+##nand arduino
+Init	KEYWORD2
+readData	KEYWORD2
+writeData	KEYWORD2
+eraseBlock	KEYWORD2
+eraseChip	KEYWORD2
+readID	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+#nand
+NAND_OK	LITERAL1
+HAL_OK	LITERAL1
+NAND_ERROR	LITERAL1
+NAND_PAGE_SIZE	LITERAL1
+NAND_BLOCK_SIZE	LITERAL1
+NAND_PLANE_SIZE	LITERAL1
+NAND_SPARE_AREA_SIZE	LITERAL1
+NAND_MAX_PLANE	LITERAL1
+Maker_Id	LITERAL1
+Device_Id	LITERAL1
+Third_Id	LITERAL1
+Fourth_Id	LITERAL1

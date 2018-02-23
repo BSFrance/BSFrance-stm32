@@ -1,0 +1,70 @@
+#######################################
+# Syntax Coloring Map SD
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+SdBaseFile	KEYWORD1
+SdFile	KEYWORD1
+SdFileSystem	KEYWORD1
+SdFatEX	KEYWORD1
+SdFatSoftSpi	KEYWORD1
+SdFatSdio	KEYWORD1
+SdFatSdioEX	KEYWORD1
+
+SD	KEYWORD1
+File	KEYWORD1
+FatFile	KEYWORD1
+FlashBlockFat	KEYWORD1
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+#FatFileSystem
+begin	KEYWORD2
+chdir	KEYWORD2
+chvol	KEYWORD2
+close	KEYWORD2
+curTimeMS	KEYWORD2
+exists	KEYWORD2
+ls	KEYWORD2
+mkdir	KEYWORD2
+open	KEYWORD2
+position	KEYWORD2
+rename	KEYWORD2
+remove	KEYWORD2
+rmdir	KEYWORD2
+seek	KEYWORD2
+size	KEYWORD2	
+vol	KEYWORD2
+
+#SDFat
+cardBegin	KEYWORD2
+fsBegin	KEYWORD2
+cardBegin	KEYWORD2
+
+#FatFile & fatvolum
+fileSize	KEYWORD2
+fileAttr	KEYWORD2
+isDir	KEYWORD2
+isFile	KEYWORD2
+isHidden	KEYWORD2
+isLFN	KEYWORD2
+isOpen	KEYWORD2
+isRoot	KEYWORD2
+isRoot32	KEYWORD2
+isRootFixed	KEYWORD2
+isReadOnly	KEYWORD2
+isSubDir	KEYWORD2
+isSystem	KEYWORD2
+volume	KEYWORD2
+cacheClear	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+FILE_READ	LITERAL1
+FILE_WRITE	LITERAL1

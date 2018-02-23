@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring Map For CMDLINE
+# Use TAB to seperate identifiers
+#         and KEYWORD specifiers!
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+tCmdLineEntry	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+CmdLineProcess	KEYWORD2
+
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+CMDLINE_BAD_CMD         	LITERAL1
+CMDLINE_TOO_MANY_ARGS	LITERAL1
+CMDLINE_TOO_FEW_ARGS	LITERAL1
+CMDLINE_INVALID_ARG   	LITERAL1
+

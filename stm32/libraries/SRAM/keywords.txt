@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map BSP
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+#sram
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+#BSP sram
+BSP_SRAM_ReadData	KEYWORD2  
+BSP_SRAM_WriteData	KEYWORD2
+STM_FSMC_SRAM_Init	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+#SRAM
+SRAM_START	LITERAL1
+SRAM_LENTH	LITERAL1

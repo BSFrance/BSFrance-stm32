@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map SPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+BlockDevice	KEYWORD1
+FlashBlockDevice	KEYWORD1
+RamBlockDevice	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+end	KEYWORD2
+getBlockCount	KEYWORD2
+readBlocks	KEYWORD2
+writeBlocks	KEYWORD2
+setReadListener	KEYWORD2
+setWriteListener	KEYWORD2
+formatFat12	KEYWORD2
+setBuffer	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

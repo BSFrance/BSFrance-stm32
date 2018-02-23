@@ -1,0 +1,56 @@
+#######################################
+# Syntax Coloring Map SPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+STM32EmbeddedFlashBlock	KEYWORD1
+STM32F4EmbeddedFlashBlock	KEYWORD1
+STM32F1EmbeddedFlashBlock	KEYWORD1
+PAGE_STATUS	KEYWORD1
+PAGE_OPERATION	KEYWORD1
+PAGE_RESULT	KEYWORD1
+FlashVariables	KEYWORD1
+storageBackend	KEYWORD1
+FlashBlock	KEYWORD1
+RamFlashPage	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+erase	KEYWORD2
+write	KEYWORD2
+read	KEYWORD2
+readBlocks	KEYWORD2
+writeBlocks	KEYWORD2
+setReadListener	KEYWORD2
+setWriteListener	KEYWORD2
+formatFat12	KEYWORD2
+setBuffer	KEYWORD2
+format	KEYWORD2
+setFormatListener	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+FLASH_BASE	LITERAL1
+
+ERASED	LITERAL1
+RECEIVE_DATA	LITERAL1
+VALID_PAGE	LITERAL1
+
+READ_FROM_VALID_PAGE	LITERAL1
+WRITE_IN_VALID_PAGE	LITERAL1
+
+VARIABLE_FOUND	LITERAL1
+VARIABLE_NOT_FOUND	LITERAL1
+VARIABLE_WRITTEN	LITERAL1
+INDEX_OUT_OF_RANGE	LITERAL1
+
+PAGE_VALID	LITERAL1
+NO_VALID_PAGE	LITERAL1
+PAGE_FULL	LITERAL1
+
+PAGE_WRITE_ERROR	LITERAL1
+
+#######################################

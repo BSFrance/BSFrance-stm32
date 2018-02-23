@@ -1,0 +1,4 @@
+uCGUI 库是用户uCGUI arduino 应用接口库，该库需要下列库的支持：
+1 uCGUI391，    uCGUI3.9.1核心库;
+2 BSP_TFTLCD,   通用LCD驱动库;
+2 BSP_Touch,    触摸屏驱动库；

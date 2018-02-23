@@ -1,0 +1,31 @@
+#######################################
+# Syntax Coloring Map For XPT2046_touch
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DS18B20Class	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setPin	KEYWORD2
+Init	KEYWORD2
+getTemp	KEYWORD2
+start	KEYWORD2
+writeByte	KEYWORD2
+readByte	KEYWORD2
+readBit	KEYWORD2
+check	KEYWORD2
+rst	KEYWORD2  
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################

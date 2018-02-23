@@ -1,0 +1,228 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+menu.serial=Serial communication
+menu.subboard=Specific Board
+menu.upload_method=Upload method
+menu.usb=USB
+menu.jtag_swd=JTAG/SWD debugging
+
+
+################################################################################
+# BSFrance LoRaMx board    16384
+
+BSFRANCE.name=BSFrance LoRaMx boards
+BSFRANCE.build.board=BSFRANCE
+BSFRANCE.build.core=arduino
+BSFRANCE.build.variant=BSFRANCE
+
+BSFRANCE.menu.subboard.LORAM3_D_L151C8=LoRaM3 D L151
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.upload.maximum_size=61440
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.upload.maximum_data_size=10232
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.build.mcu=cortex-m3
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.build.series=STM32L1
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.build.variant=LORAM3_D_L151C8
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.build.board=LORAM3_D_L151C8
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.build.extra_flags=-DSTM32L151C8 -DHSE_VALUE=8000000 -DVECT_TAB_OFFSET=0x1000
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.massstorage_drive=NODE_L151C8
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.build.f_cpu=32000000L
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.build.ldscript=ldscript.ld
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.upload.protocol=dfuse
+BSFRANCE.menu.subboard.LORAM3_D_L151C8.upload.tool=dfu-utilc
+
+
+BSFRANCE.menu.subboard.LORAM3_D_F103CB=LoRaM3 D F103
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.upload.maximum_size=126976
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.upload.maximum_data_size=20472
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.build.mcu=cortex-m3
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.build.series=STM32F1
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.build.variant=LORAM3_D_F103CB
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.build.board=LORAM3_D_F103CB
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.build.extra_flags=-DSTM32F103CB -DSTM32F1 -DHSE_VALUE=8000000 -DVECT_TAB_OFFSET=0x1000
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.massstorage_drive=NODE_F103CB
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.build.f_cpu=72000000L
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.build.ldscript=ldscript2.ld
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.upload.protocol=dfuse
+BSFRANCE.menu.subboard.LORAM3_D_F103CB.upload.tool=dfu-utilc
+
+
+BSFRANCE.menu.subboard.LORAM4_D_F303CC=LoRaM4 D F303
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.upload.maximum_size=262144
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.upload.maximum_data_size=40952
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.upload.params.quiet=0
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.build.series=STM32F3
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.build.variant=LORAM4_D_F303CC
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.build.board=LORAM4_D_F303CC
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.build.extra_flags=-DSTM32F303CC -DHSE_VALUE=8000000
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.massstorage_drive=NODE_F303CC
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.build.f_cpu=72000000L
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.build.ldscript=ldscript.ld
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.upload.protocol=dfu
+BSFRANCE.menu.subboard.LORAM4_D_F303CC.upload.tool=dfu-util
+
+
+
+####### loram4_f303 #######################
+
+loram4_f303.name=LoRaM4 F303 DFU
+loram4_f303.vid.0=0x2341
+loram4_f303.pid.0=0x0058
+
+loram4_f303.build.core=arduino
+loram4_f303.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+loram4_f303.build.series=STM32F3
+loram4_f303.build.variant=LORAM4_D_F303CC
+loram4_f303.build.board=LORAM4_D_F303CC
+loram4_f303.build.extra_flags=-DSTM32F303CC -DHSE_VALUE=8000000
+loram4_f303.massstorage_drive=NODE_F303CC
+loram4_f303.build.f_cpu=72000000L
+loram4_f303.build.ldscript=ldscript.ld
+
+loram4_f303.menu.upload_method.DFUUploadMethod=USB DFU - ROM DFU bootloader
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.tool=dfu-util
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.protocol=dfuse
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.use_1200bps_touch=true
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.file_type=bin
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.ram.maximum_size=40960
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.flash.maximum_size=262144
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.maximum_data_size=262144
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.maximum_size=262144
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.mem_start=0x08000000
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.usbID=0483:DF11
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.altID=0
+loram4_f303.menu.upload_method.DFUUploadMethod.upload.params.quiet=n
+loram4_f303.menu.upload_method.DFUUploadMethod.build.extra_flags_serial_auto=-DMENU_SERIAL_AUTO=SerialUSB
+
+
+
+loram4_f303.menu.usb.SerialUSB=Serial [Virtual COM port, PA11/PA12 pins]
+loram4_f303.menu.usb.SerialUSB.build.extra_flags_usb=-DMENU_USB_SERIAL
+loram4_f303.menu.usb.SerialMSC=Mass storage [testing, see documentation]
+loram4_f303.menu.usb.SerialMSC.build.extra_flags_usb=-DMENU_USB_MASS_STORAGE
+loram4_f303.menu.usb.Disabled=Disabled, no USB
+
+loram4_f303.menu.serial.Automatic=Automatically selected based on upload method
+loram4_f303.menu.serial.SerialUSB=SerialUSB
+loram4_f303.menu.serial.SerialUSB.build.extra_flags_serial=-DMENU_SERIAL=SerialUSB
+loram4_f303.menu.serial.SerialUART1=SerialUART1
+loram4_f303.menu.serial.SerialUART1.build.extra_flags_serial=-DMENU_SERIAL=SerialUART1
+
+############################################
+
+
+BSFRANCE.menu.subboard.LORAM3_24_L151C8=LoRaM3 2.4 L151
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.upload.maximum_size=65536
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.upload.maximum_data_size=16384
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.build.mcu=cortex-m3
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.build.series=STM32L1
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.build.variant=LORAM3_24_L151C8
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.build.board=LORAM3_24_L151C8
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.build.extra_flags=-DSTM32L151C8
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.massstorage_drive=NODE_L151C8
+BSFRANCE.menu.subboard.LORAM3_24_L151C8.build.f_cpu=32000000L
+
+BSFRANCE.menu.subboard.LORAM3_24_F103CB=LoRaM3 2.4 F103
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.upload.maximum_size=131072
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.upload.maximum_data_size=20480
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.build.mcu=cortex-m3
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.build.series=STM32F1
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.build.variant=LORAM3_24_F103CB
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.build.board=LORAM3_24_F103CB
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.build.extra_flags=-DSTM32F103CB
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.massstorage_drive=NODE_L103CB
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.build.f_cpu=72000000L
+BSFRANCE.menu.subboard.LORAM3_24_F103CB.build.ldscript=ld/f103xB.ld
+
+BSFRANCE.menu.subboard.LORAM3_24_F303CC=LoRaM4 2.4 F303
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.uploadflash.maximum_size=262144
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.upload.maximum_size=262144
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.upload.maximum_data_size=40960
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.build.series=STM32F3
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.build.variant=LORAM4_24_F303CC
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.build.board=LORAM3_24_F303CC
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.build.extra_flags=-DSTM32F303CC
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.massstorage_drive=NODE_L303CC
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.build.f_cpu=72000000L
+BSFRANCE.menu.subboard.LORAM3_24_F303CC.build.ldscript=ldscript.ld
+
+#---------------------------- UPLOAD METHODS ---------------------------
+
+#BSFRANCE.menu.upload_method.DFUUploadMethod=USB DFU - STM32Duino bootloader (0x2000)
+#BSFRANCE.menu.upload_method.DFUUploadMethod.upload.protocol=maple_dfu
+#BSFRANCE.menu.upload_method.DFUUploadMethod.upload.tool=maple_upload
+##BSFRANCE.menu.upload_method.DFUUploadMethod.build.extra_flags=-DSTM32F103CB -DVECT_TAB_OFFSET=0x1000
+##BSFRANCE.menu.upload_method.DFUUploadMethod.upload.usbID=1EAF:0003
+#BSFRANCE.menu.upload_method.DFUUploadMethod.upload.usbID=DF11:0483
+#BSFRANCE.menu.upload_method.DFUUploadMethod.upload.altID=2
+##BSFRANCE.menu.upload_method.DFUUploadMethod.flash.maximum_size=122880
+##BSFRANCE.menu.upload_method.DFUUploadMethod.maximum_data_size=122880
+##BSFRANCE.menu.upload_method.DFUUploadMethod.ram.maximum_size=20480
+#BSFRANCE.menu.upload_method.DFUUploadMethod.build.extra_flags_serial_auto=-DMENU_SERIAL_AUTO=SerialUSB
+
+
+#BSFRANCE.menu.upload_method.DFUUploadMethod2= USB DFU - bootoader F103 L151
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.tool=dfu-utilc
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.protocol=dfuse
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.use_1200bps_touch=true
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.file_type=bin
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.ram.maximum_size=40960
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.flash.maximum_size=262144
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.maximum_size=262144
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.mem_start=0x08001000
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.usbID=0483:DF11
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.upload.altID=0
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.params.quiet=0
+#BSFRANCE.menu.upload_method.DFUUploadMethod2.build.extra_flags_serial_auto=-DMENU_SERIAL_AUTO=SerialUSB
+
+
+BSFRANCE.menu.upload_method.DFUUploadMethod3= USB DFU bootloader
+#BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.tool=dfu-util
+#BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.protocol=dfu
+BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.use_1200bps_touch=true
+BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.file_type=bin
+BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.ram.maximum_size=40960
+BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.flash.maximum_size=262144
+BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.maximum_size=262144
+BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.mem_start=0x08001000
+BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.usbID=0483:DF11
+BSFRANCE.menu.upload_method.DFUUploadMethod3.upload.altID=0
+BSFRANCE.menu.upload_method.DFUUploadMethod3.params.quiet=0
+BSFRANCE.menu.upload_method.DFUUploadMethod3.build.extra_flags_serial_auto=-DMENU_SERIAL_AUTO=SerialUSB
+
+
+BSFRANCE.menu.upload_method.STLinkMethod=STLink
+BSFRANCE.menu.upload_method.STLinkMethod.upload.protocol=STLink
+BSFRANCE.menu.upload_method.STLinkMethod.upload.tool=stlink_upload
+BSFRANCE.menu.upload_method.STLinkMethod.build.extra_flags_serial_auto=-DMENU_SERIAL_AUTO=SerialUSB
+
+
+BSFRANCE.menu.upload_method.serialMethod=Serial UART1 [TX/PA9, RX/PA10, BOOT0=1, BOOT1=0]
+BSFRANCE.menu.upload_method.serialMethod.upload.protocol=maple_serial
+BSFRANCE.menu.upload_method.serialMethod.upload.tool=serial_upload
+BSFRANCE.menu.upload_method.serialMethod.build.extra_flags_serial_auto=-DMENU_SERIAL_AUTO=SerialUART1
+
+
+BSFRANCE.menu.upload_method.BMPMethod=BMP (Black Magic Probe)
+BSFRANCE.menu.upload_method.BMPMethod.upload.protocol=gdb_bmp
+BSFRANCE.menu.upload_method.BMPMethod.upload.tool=bmp_upload
+
+
+BSFRANCE.menu.usb.SerialUSB=Serial [Virtual COM port, PA11/PA12 pins]
+BSFRANCE.menu.usb.SerialUSB.build.extra_flags_usb=-DMENU_USB_SERIAL
+BSFRANCE.menu.usb.SerialMSC=Mass storage [testing, see documentation]
+BSFRANCE.menu.usb.SerialMSC.build.extra_flags_usb=-DMENU_USB_MASS_STORAGE
+BSFRANCE.menu.usb.Disabled=Disabled, no USB
+
+BSFRANCE.menu.serial.Automatic=Automatically selected based on upload method
+BSFRANCE.menu.serial.SerialUSB=SerialUSB
+BSFRANCE.menu.serial.SerialUSB.build.extra_flags_serial=-DMENU_SERIAL=SerialUSB
+BSFRANCE.menu.serial.SerialUART1=SerialUART1
+BSFRANCE.menu.serial.SerialUART1.build.extra_flags_serial=-DMENU_SERIAL=SerialUART1
+
+BSFRANCE.menu.jtag_swd.SWD=SWD [debug pins reserved: IO(PA13), CLK(PA14)]
+BSFRANCE.menu.jtag_swd.SWD.build.extra_flags_jtag=-DMENU_DEBUG_SWD
+BSFRANCE.menu.jtag_swd.JTAG=JTAG [debug pins reserved: IO(PA13), CLK(PA14), PA15, PB3, PB4]
+BSFRANCE.menu.jtag_swd.JTAG.build.extra_flags_jtag=-DMENU_DEBUG_JTAG
+BSFRANCE.menu.jtag_swd.Disabled=Disabled [debug pins free]
+BSFRANCE.menu.jtag_swd.Disabled.build.extra_flags_jtag=-DMENU_DEBUG_DISABLED
