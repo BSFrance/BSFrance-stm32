@@ -21,7 +21,7 @@ The LoRaMx boards are providing a serial port via the native USB interface, this
 ### DFU
 
 The DFU or Device Firmare Upgrade is a standard widely used to provide simple firmware upgrade on many devices and baords. On LoRaMx boards it provides automatic upload of user code via USB from Arduino IDE with no need for user action or external programmer.
-All our STM32 boards are fitted with an extremely compact DFU capable firmware (4K, smallest on the market), some variants are also using the internal STM32 DFU bootlaoder, effectively using 0 octet of user flash.
+Our STM32 boards are fitted with an extremely compact DFU capable firmware (4K, smallest on the market), some variants are also using the internal STM32 DFU bootlaoder, effectively using 0 octet of user flash.
 Note : all boards with the 4K bootloader will blink the white LED fast when set to DFU mode, all boards using the internal bootlader (STM32F3xx, STM32F4xx, STML4xx) won't blink white LED when set to DFU mode.
 
 
