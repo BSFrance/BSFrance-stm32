@@ -7,8 +7,8 @@ This core is will allow you to use all BSFrance boards based on STM32 MCUs with 
 At first drivers for the usb-serial (VCP, Virtual Com Port) and DFU (Device Firmware Upgrade) have to be installed. This applies to Windows only, Mac OSX and Linux users wont have to install drivers (in most cases).
 
   - Plug the board to USB, press the reset button twice within 0.5 second to set the board in DFU mode.
-  - Launch Zadig installer, the board will be recognized as STM32 BOOTLOADER, install the driver.
-  - Press the reset button once so the board restart in normal mode (run) and install the STMicro USB serial driver.
+  - Launch [Zadig installer](https://github.com/BSFrance/BSFrance-stm32/raw/master/stm32/tools/win/drivers/zadig-2.3.exe "Zadig installer"), the board will be recognized as STM32 BOOTLOADER, install the driver.
+  - Press the reset button once so the board restart in normal mode (run) and install the [STM32 Virtual COM Port driver](https://github.com/BSFrance/BSFrance-stm32/raw/master/stm32/tools/win/drivers/Virtual%20Com%20port%20driver%20V1.4.0.msi "STM32 Virtual COM Port driver").
 
 You can now proceed with the Arduino core installation, to do so, download it and unzip this repository to Documents / Arduino / hardware folder. Note : Documents / Arduino is the default location, if you use another location principle is the same. If you dont have any Hardware folder in Documents / Arduino create it and drop the BSFrance repository in it. If you already have a BSFrance folder you can drop the STM32 folder in it.
 
