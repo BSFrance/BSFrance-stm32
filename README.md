@@ -35,7 +35,7 @@ We implemented a failsafe mecanism to enter in DFU mode manually, by pressing th
 This mecanism is very important for any board with native USB serial because if user code locks-up the main loop then serial port wont be served anymore and Arduino IDE will lose the ability to reset board into DFU mode for automatic uploading.
 So in such case the DFU mode has to be set manually by pressing the reset button twice within 0.5 second, uploading can then be done in Arduino IDE with the upload button as usual.
 
-Note : when set to manual DFU mode the serial port wont be visible in Tools / port menu anymore, this is normal behavior and wont prevent uploading. The serial port cannot coexist with the DFU port due to OS limitations, during the uplaod process, the existing serial port is used by Arduino to reset the board into DFU mode, both mode are never active at the same time. When the board is set to manual DFU mode Arduino will detect it is already in DFU mode and will upload directly.
+*Note : when set to manual DFU mode the serial port wont be visible in Tools / port menu anymore, this is normal behavior and wont prevent uploading. The serial port cannot coexist with the DFU port due to OS limitations, during the uplaod process, the existing serial port is used by Arduino to reset the board into DFU mode, both mode are never active at the same time. When the board is set to manual DFU mode Arduino will detect it is already in DFU mode and will upload directly.*
 
 ### SWD (STlink)
 
