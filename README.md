@@ -1,6 +1,6 @@
 # BSFrance Arduino core for STM32 boards
 
-This core is will allow you to use all BSFrance boards based on STM32 MCUs with the Arduino ecosystem, it implements all standard Arduino core function as well as many extras. The core also allows you to use standard CMSIS and STM32 HAL function drectly in your arduino sketch which can be very handy for optimisation purposes or for fast porting of existing code and drivers.
+This core will allow you to use BSFrance AVR based boards with the Arduino ecosystem, it ibsed on STM32 HAL.
 
 # How to install
 
