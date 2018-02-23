@@ -13,7 +13,7 @@ At first drivers for the usb-serial (VCP, Virtual Com Port) and DFU (Device Firm
 You can now proceed with the Arduino core installation :
   - download the [core repository](https://github.com/BSFrance/BSFrance-stm32/archive/master.zip) and unzip it to Documents / Arduino / hardware folder (you might also want to rename it BSFrance-stm32).
 
-Note : Documents / Arduino is the default location used by Arduino IDE, if you use another location the principle is the same. If there is no Hardware folder in Documents / Arduino create it and move the BSFrance-stm32 repository inside.
+*Note : Documents / Arduino is the default location used by Arduino IDE, if you use another location the principle is the same. If there is no Hardware folder in Documents / Arduino create it and move the BSFrance-stm32 repository inside.*
 
   - Launch Arduino IDE, select BSFrance LoRaMx boards in the Tool / board menu, select your variant in the Tools / Specific board menu, finally select the correct serial port in the Tool / port menu. Your board is now ready to use with Arduino IDE.
 
@@ -39,4 +39,4 @@ Note : when set to manual DFU mode the serial port wont be visible in Tools / po
 
 ### SWD (STlink)
 
-You can also use an STLink debugger for uploading, make sure to select STLink in the Tools / upload method menu. Connect your STLink to the SWD interface (3V3 GND DIO CLK), there is no need to connect the RST line, reset is issued in software.
+Alternatively STLink debugger can be used for uploading, make sure to select STLink in the Tools / upload method menu. Connect your STLink to the SWD interface (3V3 GND DIO CLK), there is no need to connect the RST line, reset is issued in software.
