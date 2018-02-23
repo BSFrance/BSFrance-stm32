@@ -1,3 +1,0 @@
-# BSFrance AVR boards
-
-
