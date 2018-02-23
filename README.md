@@ -7,13 +7,15 @@ This core is will allow you to use all BSFrance boards based on STM32 MCUs with 
 At first drivers for the usb-serial (VCP, Virtual Com Port) and DFU (Device Firmware Upgrade) have to be installed. This applies to Windows only, Mac OSX and Linux users wont have to install drivers (in most cases).
 
   - Plug the board to USB, press the reset button twice within 0.5 second to set the board in DFU mode.
-  - Launch [Zadig installer](https://github.com/BSFrance/BSFrance-stm32/raw/master/stm32/tools/win/drivers/zadig-2.3.exe "Zadig installer"), the board will be recognized as STM32 BOOTLOADER, install the driver.
-  - Press the reset button once so the board restart in normal mode (run) and install the [STM32 Virtual COM Port driver](https://github.com/BSFrance/BSFrance-stm32/raw/master/stm32/tools/win/drivers/Virtual%20Com%20port%20driver%20V1.4.0.msi "STM32 Virtual COM Port driver").
+  - Launch [Zadig installer](https://github.com/BSFrance/BSFrance-stm32/raw/master/stm32/tools/win/drivers/zadig-2.3.exe), the board will be recognized as STM32 BOOTLOADER, install the driver.
+  - Press the reset button once so the board restart in normal mode (run) and install the [STM32 Virtual COM Port driver](https://github.com/BSFrance/BSFrance-stm32/raw/master/stm32/tools/win/drivers/Virtual%20Com%20port%20driver%20V1.4.0.msi).
 
-You can now proceed with the Arduino core installation, to do so download the  [core repository](https://github.com/BSFrance/BSFrance-stm32/archive/master.zip "core repository") and unzip it to Documents / Arduino / hardware folder (you might also want to rename it BSFrance-stm32).
+You can now proceed with the Arduino core installation, to do so
+  - download the [core repository](https://github.com/BSFrance/BSFrance-stm32/archive/master.zip) and unzip it to Documents / Arduino / hardware folder (you might also want to rename it BSFrance-stm32).
+
 Note : Documents / Arduino is the default location used by Arduino IDE, if you use another location the principle is the same. If there is no Hardware folder in Documents / Arduino create it and move the BSFrance-stm32 repository inside.
 
-Launch Arduino IDE, select BSFrance LoRaMx boards in the Tool / board menu, select your variant in the Tools / Specific board menu, finally select the correct serial port in the Tool / port menu. Your board is now ready to use with Arduino IDE.
+  - Launch Arduino IDE, select BSFrance LoRaMx boards in the Tool / board menu, select your variant in the Tools / Specific board menu, finally select the correct serial port in the Tool / port menu. Your board is now ready to use with Arduino IDE.
 
 ### USB serial port
 
